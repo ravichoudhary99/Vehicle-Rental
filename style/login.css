@@ -1,0 +1,128 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lemonada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Lemonada', cursive;
+    font-family: 'Quicksand', sans-serif;
+
+    src: url(https://fonts.googleapis.com/css?family=Lemonada|Quicksand:400,600&display=swap);
+}
+body {
+    /* background-color:powderblue;
+    background-image:url(../Images/loginbg.jpg);
+    background-size:cover;
+       */
+    background: rgba(3, 1, 1, 0.81);
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(.34, rgba(230,237,241,.05)), color-stop(.67, rgba(230,237,241,0)));
+    -webkit-background-size: 5px 5px;
+    font-family: 'Quicksand',sans-serif;
+}
+div.main-login {
+    background-color: #ffffff;
+    display: block;
+    height: 550px;
+    width: 400px;
+    margin: 7% auto auto auto;
+    border-radius: 10px;
+    box-shadow: rgb(112, 112, 112) 0 0 10px;
+}
+.login-panel {
+    padding: 5%;
+}
+.logo{
+    height:40%;
+    padding:10%;
+}
+img.img{
+    margin:1px auto 0 35px;
+    height:auto;
+    width:250px;
+}
+div label {
+    font-size: 36px;
+    line-height: 25px;
+    font-family: 'Lemonada', cursive;
+    margin-top:40%;
+    color:#ff6b8f;
+}
+.email {
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    font-weight: 600;
+    padding-left: 10%;
+    background-image: url(../Images/emaillogo.png);
+    background-repeat: no-repeat;
+    background-color: #e6e6e6;
+    margin: 2.5% auto 1% auto;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    height: 34px;
+    width: 309px;
+}
+.password {
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    padding-left: 10%;
+    outline: none;
+    background-image: url(../Images/passwordlock.png);
+    background-repeat: no-repeat;
+    background-color: #e6e6e6;
+    margin: 0 auto 1% 7.99%;
+    border: none;
+   border-radius:25px 0px 0px 25px;
+    height: 34px;
+    width: 273px;
+    float:left;
+}
+.loginbtn-design {
+    border-radius: 25px;
+    border: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 auto 1% auto;
+    margin-left: 30%;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #87314e;
+    outline: none;
+    display: block;
+}
+    .loginbtn-design:hover {
+        background-color: #df405a;
+        outline: none;
+        border: 1px #df405a solid;
+    }
+.label1 {
+    margin-left:10%;
+    margin-top:5%;
+}
+    .loginbtn-design:hover {
+        background-color: #df405a;
+        outline: none;
+        border: 1px #df405a solid;
+    }
+.showpwd-design {
+    height: 34px;
+    width: 34px;
+    border-radius: 0 25px 25px 0;
+    background-color: #e6e6e6;
+}
+.password:focus, .email:focus {
+    box-shadow: 0 0 10px #777778;
+    border: 0;
+    outline: none;
+    background-color: rgba(251, 247, 191, 0.89);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.password:hover {
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+}

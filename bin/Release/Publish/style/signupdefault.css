@@ -1,0 +1,89 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500;700&display=swap');
+
+@font-face {
+    font-family: 'Baloo Tamma 2', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500;700&display=swap');
+}
+btn-car {
+    height: 56px;
+    width: 150px;
+    text-align: right;
+    font-weight: 700;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    border-color: #06bda1;
+    border-style: solid;
+    border-width: medium;
+}
+
+.need-car {
+    background: url(steering-wheel.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #00c2bf;
+}
+
+.need-car-asso {
+    background: url(car.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #00c2bf;
+}
+
+.btn-car:hover {
+    background-color: #05f7f4;
+    cursor: pointer;
+    border-color: #00c2bf;
+}
+
+.txtbox {
+    width:250px;
+    height:20px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.inputicon {
+    background-color:white;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-style: solid ;
+    border-width:1px;
+    border-color: #c7c7c7;
+    padding-left: 2px;
+}
+
+    .inputicon:hover {
+        border-color: red;
+        color: red;
+    }
+button {
+    margin-left: 40%;
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(229, 186, 52, 0.62);
+    border-radius: 20px;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight:600;
+}
+.logo {
+    width: 20%;
+    padding: 15px;
+    margin: 1% auto 0 auto;
+}
+
+img {
+    margin: 1% auto 0 auto;
+    color: black;
+    height: 200px;
+    width: auto;
+}

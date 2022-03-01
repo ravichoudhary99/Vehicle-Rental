@@ -1,0 +1,21 @@
+﻿body {
+    border: 0;
+    /*
+    background-image: url(../Images/signup-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        */
+    background: rgba(3, 1, 1, 0.81);
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(.34, rgba(230,237,241,.05)), color-stop(.67, rgba(230,237,241,0)));
+    -webkit-background-size: 5px 5px
+}
+div.reg-main {
+    margin: 3% auto 0 auto;
+    border: solid 1px;
+    width: max-content;
+    padding: 25px 15px 25px 15px;
+    background-color: rgba(212, 205, 205, 0.83);
+    box-shadow: 0 0 30px #777777;
+    border-radius: 1em 8em 1em 8em / 2em 1em 2em 1em;
+}

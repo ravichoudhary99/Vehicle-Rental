@@ -1,0 +1,223 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="main.Master.vb" Inherits="Vehicle_Rental.Site1" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>RentOnWheel</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="style/master.css" rel="stylesheet" />
+    <script src="Scripts/signup.js" type="text/javascript"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/c76c3dbd34.js" ></script>
+    
+    
+        <script  type="text/javascript">
+            function myFunction(x) {
+                x.classList.toggle("change");
+                var z = document.getElementById("main");
+                z.classList.toggle("mbody");
+                var a = document.getElementById("footer");
+                a.classList.toggle("mbody");
+                menu();
+            }
+            function menu() {
+                var y = document.getElementById("menu-drop");
+                if (y.classList.contains("drop-menu")) {
+                    y.classList.replace("drop-menu", "drop-menu_dis");
+                    disableScroll();
+                } else {
+                    y.classList.replace("drop-menu_dis", "drop-menu");
+                    enableScroll();
+                }
+            }
+            function disableScroll() {
+                // Get the current page scroll position 
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+                    // if any scroll is attempted, set this to the previous value 
+                    window.onscroll = function () {
+                        window.scrollTo(scrollLeft, scrollTop);
+                    };
+            }
+
+            function enableScroll() {
+                window.onscroll = function () { };
+            } function openlogin() {
+
+                var disp = document.getElementById("myForm1");
+                var a = document.getElementById("myForm");
+
+                if (disp.classList.contains("login_div")) {
+                    a.style.animationDirection = "normal";
+                    disp.classList.replace("login_div", "login_div-disp");
+                    disableScroll();
+
+                }
+
+            }
+            function closelogin() {
+                var disp = document.getElementById("myForm1");
+                disp.classList.replace("login_div-disp", "login_div");
+                enableScroll();
+            }
+
+            function showpwd() {
+                var x = document.getElementById("pwd");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+
+            </script>
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('.acc h3').click(function () {
+                     $(this).next('.content1').slideToggle();
+                     $(this).parent().toggleClass('active');
+                     $(this).parent().siblings().children('.content1').slideUp();
+                     $(this).parent().siblings().removeClass('active');
+                 });
+             });
+     </script>
+
+</head>
+<body>
+   
+    <div class="master">
+    <form runat="server" style="overflow:inherit;" >
+        <asp:HiddenField ID="HiddenField1" runat="server" />
+    <div class="wrapper">
+        <div class="manu">
+            <nav class="main">
+                <div class="container" onclick="myFunction(this)">
+                         <div class="bar1"></div>
+                         <div class="bar2"></div>
+                         <div class="bar3"></div>
+                </div>
+                <span class="logo">
+                    <a href="home.aspx"><img src="Images/logo3.PNG" class="navimg" /></a>
+                </span>
+                <span style="box-sizing:content-box; position: relative;">
+                  <!--
+                    <asp:LinkButton ID="LoginBtn" runat="server" PostBackUrl="~/login.aspx" ><img class="navimg btnpos" onclick="" style="cursor:pointer;" src="images/login.png" ></asp:LinkButton> !-->
+                    <a href="#" class="login_img" id="loginpop" runat="server"><img class="navimg" onclick="openlogin();" style="cursor:pointer;" src="images/login.png" ></a> 
+                    <div ID="loggedinbtn" class="dropdown" runat="server" visible="false">
+                     <button class="dropbtn">Account</button>
+                        <div class="dropdown-content">
+                         <a href="/manageaccount.aspx">My Account</a>
+                         <a href="/logout.aspx">Logout</a>
+                    </div>
+                            </div>
+                </span>
+            </nav>
+            
+           
+        </div>
+        <div id="main">
+            <asp:ContentPlaceHolder ID="main_body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+      
+    </div>
+        
+     <!-- footer -->
+   
+        <div class="footer" id="footer">
+            <div class="footer-content" >
+               <div class="footer-section about">
+                   <img class="footer-logo" src="Images/logo1.png" />
+
+                   <div class="social">
+                       <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                       <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                   </div>
+               </div>     
+               
+                <div class="footer-section links">
+                    <h2>Quick links</h2>
+                    
+                    <ul>
+                        <a href="/home.aspx">
+                            <li>Home</li>
+                        </a>
+                        <a href="/FAQs.aspx">
+                            <li>FAQs</li>
+                        </a>
+                        <a href="#">
+                            <li>Policy</li>
+                        </a>
+                        <a href="/login.aspx">
+                            <li>Tenant login</li>
+                        </a>
+                        <a href="#">
+                            <li>top</li>
+                        </a>
+                    </ul>
+                </div>
+                
+                <div class="footer-section contectus">
+                    <h2>Contact Us</h2>
+                   
+                   
+                        <div class="icons"><i class="fas fa-envelope"></i>&nbsp<label>abc@email.com</label></div>
+                        <br />
+                        <div class="icons"><i class="fas fa-phone-alt"></i><label> +91-9999988888</label></div>
+                        <br />
+                        <div class="icons"><i class="fas fa-comments"></i><label>1,A-Sector, Shashtri Nagar </label><br /> &nbsp&nbsp&nbsp&nbsp&nbsp<label>Jodhpur, Rajasthan</label></div>
+                        <br />
+                    <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/customerquery.aspx" ForeColor="#99FFCC">Click to send us query</asp:LinkButton>
+                           <br />
+                    <asp:Label ID="sucstatus" runat="server" Text="" ForeColor="#00CC66"></asp:Label>
+                    
+                </div>
+                </div>
+                <div class="footer-bottom">
+                 &copy; rentonwheel.com
+             </div>
+            </div>
+             <div class="drop-menu" id="menu-drop">
+                <ul>
+                    <li><a href="/home.aspx">Home</a></li>
+                    <li><a href="/signupselect.aspx">Register</a></li>
+                    <li><a href="/login.aspx">Login</a></li>
+                    <li><a href="/FAQs.aspx">FAQs</a></li>
+                </ul>
+            </div>
+        <div class="login_div" id="myForm1"  >                
+        <div class="form-popup" id="myForm"  >
+            <img role="button" onclick="closelogin();" style="cursor:pointer;" src="Images/close.png" />
+            <h1 class="h1-login">Login</h1>
+                <div class="field-wrapper">
+                    <input type="email" name="email" runat="server" id="logemail" required="required">
+                    <label id="label">E-mail</label>
+                </div>
+                <div class="field-wrapper">
+                    <input type="password" name="password" runat="server" id="logpwd" required="required">
+                    <label id="label">password</label>
+                </div>
+            <div class="field-wrapper">
+            <button type="submit" class="btn" runat="server" id="Logbttn">Login</button></div>
+             <div class="shwpass">
+            <input type="checkbox" name="shwpass" onclick="showpwd()" />
+              <label for="shwpass" id="shwpass">Show Password</label><br />
+        </div>
+            <div class="dontaccount">
+              <asp:Label ID="accountlabel" runat="server" Text="Don't have an account ?" ForeColor="#CCFFFF"></asp:Label><br />
+            <asp:LinkButton ID="SignUpBtn" runat="server" PostBackUrl="~/signupselect.aspx" ForeColor="#CC0000">Register Now</asp:LinkButton>
+                </div>
+        </div>
+
+         
+      </div>
+    </form>
+    </div>
+</body>
+</html>
+

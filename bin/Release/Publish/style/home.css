@@ -1,0 +1,210 @@
+﻿.total-div {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+}
+
+.upperpart {
+    margin-bottom: 20px;
+    height: 500px;
+    background-image: url(../Images/caranimate.gif);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0px center;
+    padding: 2px 2px 2px 2px;
+}
+
+.booking {
+    margin: .1% auto 1% auto;
+    background-color: #f7dc5f;
+    opacity: .6;
+    height: 95%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 2px 2px 2px 2px;
+}
+
+.aa {
+    width: 1125px;
+    padding: 2px 2px 2px 2px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.icon-container {
+    margin-top: 30px;
+    width: 100%;
+    height: 125px;
+}
+
+
+.icon {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin-left: 6%;
+    margin-right: 8.6%;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 2px 4px 2px 3px;
+    box-sizing: border-box;
+}
+
+    .icon::before, .icon::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+        border-radius: 100px;
+    }
+
+
+
+
+.icon-fill::before {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px #16A085;
+}
+
+.icon-fill:hover::before {
+    box-shadow: inset 0 0 0 70px #16A085;
+}
+
+.icon-enter::after {
+    box-shadow: inset 0 0 0 1px #EB9532;
+}
+
+.icon-enter::before {
+    border-radius: 70px;
+    margin-left: -100%;
+    box-shadow: inset 0 0 0 70px #EB9532;
+}
+
+.icon-enter:hover::before {
+    margin-left: 0;
+}
+
+.icon-expand::after {
+    box-shadow: inset 0 0 0 1px #C82647;
+}
+
+.icon-expand::before {
+    background: #C82647;
+    box-shadow: inset 0 0 0 70px #2d2c3e;
+}
+
+.icon-expand:hover::before {
+    box-shadow: inset 0 0 0 1px #2d2c3e;
+}
+
+.icon-collapse::before {
+    border-radius: 100px;
+}
+
+.icon-collapse:hover::before {
+    box-shadow: inset 0 60px 0 0 #8CC63F, inset 0 -70px 0 0 #8CC63F;
+}
+
+.icon-collapse::after {
+    box-shadow: inset 0 0 0 1px #8CC63F;
+}
+
+.text-container {
+    margin: 0px auto 30px auto;
+    width: 100%;
+    height: 248px;
+}
+
+.text {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 251px;
+    height: 100px;
+    margin-left: 0;
+    margin-right: 2%;
+    padding-bottom: 3%;
+    overflow-wrap: normal;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-top: 5px;
+    padding-left: 3px;
+    box-sizing: border-box;
+}
+
+    .text h2 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+.icon-container .imgw {
+    height: 79px;
+    width: auto;
+    margin-top: 5px;
+    position: relative;
+    top: -11px;
+    margin-left: 14px;
+    margin-right: 9px;
+    padding-top: 20px;
+}
+
+
+.booking-table {
+    width: 70%;
+    margin: 50px auto 0 auto;
+}
+
+table tr th {
+    font-size: 25px;
+    font-weight: 800;
+    padding: 5px 5px 5px 5px;
+}
+
+table tr td {
+    height: 40px;
+    vertical-align: central;
+    padding: 2px 2px 2px 2px;
+}
+
+.label {
+    width: 175px;
+    font-weight: 600;
+    padding: 2px 2px 2px 2px;
+}
+
+.select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+}
+
+table tr td .submit-but {
+    height: 45px;
+    width: 130px;
+    background-color: #d0f6b5;
+    font-weight: 600;
+    text-align: center;
+    transition: all .3s;
+    margin-left: 50%;
+}
+
+    table tr td .submit-but:hover {
+        background-color: rgba(38, 37, 37, 0.75);
+        color: antiquewhite;
+    }
+
+    table tr td .submit-but:active {
+        background-color: rgba(38, 37, 37, 0.75);
+        color: antiquewhite;
+        box-shadow: 0 5px #666;
+        transform: translateY(2px);
+    }

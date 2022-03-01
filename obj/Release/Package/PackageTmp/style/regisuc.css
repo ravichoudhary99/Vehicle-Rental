@@ -1,0 +1,42 @@
+﻿.registsuccess {
+    border-style: solid;
+    border-color: #00c95f;
+    background-color: #a5ffdd;
+    width:60%;
+    margin-left:20%;
+    margin-right:30%;
+    margin-top:5%;
+    text-align:center;
+    border-radius:3px;
+    border-width:1.5px;
+}
+.loginbtn{
+    border-style:solid;
+    border-width:2px;
+    border-radius:5px;
+    border-color:#060601;
+    background-color:#fbffab;
+    color:#02944e;
+    width:150px;
+    height:40px;
+    display:inline-block;
+    font-size:x-large;
+    text-align:center;
+    font-weight:bold;
+    margin-left:6px;
+}
+.logindivs {
+    margin-left: 45%;
+    margin-right: 25%;
+    margin-top: 5%;
+}
+.clicklog{
+    font-family:'Lucida Sans';
+    font-weight:bold;
+    color:#00c123;
+}
+.loginbtn:hover{
+    background-color:black;
+    color:#dcc200;
+    cursor:pointer;
+}

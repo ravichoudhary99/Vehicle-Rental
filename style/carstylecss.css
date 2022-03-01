@@ -1,0 +1,485 @@
+body{
+	margin: 0;
+	padding:0;
+	min-height: 100%;
+
+
+}
+
+div.personal-details-page{
+	width: 80%;
+	/*border: solid 1px red;*/
+	min-height: 800px;
+	padding: 25px 0 10px 25px;
+	margin: 70px auto 0 auto;
+}
+
+div.personal-details-page .inner{
+ margin-right: 25px;
+}
+
+div.personal-details-page .profilecontain{
+  display: flex;
+}
+
+div.personal-details-page .tabs{
+	/*border:1px green solid;*/
+	padding-bottom: 30px;
+	width: 323px;
+	box-shadow: 0 0 15px rgb(231,233,234);
+	border-radius: 5px;
+	background-color: rgb(238,240,243);
+}
+div.personal-details-page .tabs .profile-name{
+	/*border: 1px solid red;*/
+	height: 80px;
+	padding: 30px 25px 25px 25px;
+	font-size: 36px;
+	text-align: center;
+	line-height: 75px;
+	background-color: white;
+	text-transform: capitalize;
+}
+
+div.personal-details-page .tabs .tab-icon-content{
+	width: 275px;
+	/*border: 1px solid red;*/
+	height: 40px;
+	padding: 8px;
+	margin: 15px 0 0 29px ;
+	display: flex;
+	cursor: pointer;
+}
+
+div.personal-details-page .tabs .tab-icon-content.active{
+	background-color: white;
+}
+
+
+div.personal-details-page .tabs .tab-icon-content .icon{
+	height: 24px;
+	width: 24px;
+	padding: 8px;
+	margin-right: 22px;
+
+
+
+}
+
+div.personal-details-page .tabs .tab-icon-content .content{
+	padding: 10px 30px;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+
+div.personal-details-page .acc-detail{
+	/*border: 1px blue solid;*/
+	min-height: 800px;
+	width: 75%;
+	margin-top: 10px;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+/* border: 1px solid red;*/
+  margin: 10px 10px;
+  height: 700px;
+  
+}
+
+div.personal-details-page .acc-detail .tabcontent .profile-section{
+  display: flex;
+  flex-direction: column;
+}
+
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-upper{
+	/*border: 1px blue dotted;*/
+	height: 165px;
+	margin: 10px 10px;
+	padding: 10px 10px;
+  display: flex;
+
+}
+
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-upper .profile-pic{
+	/*border: 5px solid red;*/
+	width: 150px;
+	padding: 10px 10px;
+	margin: 17px 17px;
+	
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-upper .add{
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+	position: absolute;
+	top: 245px;
+    left: 700px;
+    opacity: 0.8;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-upper .user-id{
+	/*border: 1px solid green;*/
+	width: 75%;
+	margin: 15px 10px;
+	padding:10px 10px;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-upper .user-detail{
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 28px;
+	text-transform: capitalize;
+
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-upper .user-info{
+	display: flex;
+	padding: 16px 0;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-upper .user-info-tab{
+	color: #77899b;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 5%;
+}
+
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-upper .user-info-tab label{
+	font-weight: 600;
+	color: black;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower {
+   display: flex;
+   width: 95%;
+    height: 450px;
+    margin: 32px 2px 10px 16px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px -2px rgba(31,45,61,.4);
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .user-detail-section{
+	display: flex;
+	width: 100%;
+	padding: 10px 16px;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .personal-info-section{
+	width: 60%;
+}
+
+.header{
+	padding: 10px 12px;
+	margin: 10px 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 10px;
+	clear:both;
+	text-transform: capitalize;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .personal-info-section .info-row{
+	display: flex;
+    justify-content: space-between;
+    padding-right: 3%;
+
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .personal-info-section .personal-info .info-row .info-row-text{
+	flex: 0.9 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .personal-info-section  .personal-info .info-row .info-row-text .left-side{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .personal-info-section .personal-info .info-row .info-row-text .right-side{
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .personal-info-section .personal-info .info-row .info-row-icons {
+	color: #41b6ac;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 16px;
+    flex: 0.1 1;
+}
+.pointer{
+	cursor: pointer;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .personal-info-section .important-note{
+	font-size: 12px;
+    color: #1f2d3d;
+    margin-top: 20px;
+    line-height: 18px;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .license-detail-section{
+	width: 40%;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .license-detail-section .license-detail{
+	display: flex;
+    justify-content: center;
+    padding: 16px;
+    border: 1px solid #b8c1cb;
+    border-radius: 6px;
+    background-color: #fff;
+    min-height: 217px;
+    min-width: 240px;
+    max-width: 320px;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .license-detail-section .license-detail .license-image-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .license-detail-section .license-detail .license-image-block .empty-license-image{
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .license-detail-section .license-detail .license-image-block .empty-license-image .no-license-image{
+	margin-bottom: 50px;
+
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .license-detail-section .license-detail .license-image-block .empty-license-image .upload-license{
+	width: 100%;
+}
+
+div.personal-details-page .acc-detail .tabcontent .pro-detail-lower .license-detail-section .license-detail .license-image-block .empty-license-image .upload-license .primary-button{
+	width: 100%;width: 100%;
+    font-size: 14px;
+    border: 1px solid #41b6ac;
+    border-radius: 6px;
+    background-color: #41b6ac;
+}
+.primary-button {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    padding: 12px 40px;
+    border: 1px solid #41b6ac;
+    border-radius: 6px;
+    background-color: #41b6ac;
+}
+
+
+
+div.personal-details-page .acc-detail .tabcontent .all-booking{
+	height: 500px;
+   /* border: 1px solid red;*/
+}
+
+div.personal-details-page .acc-detail .tabcontent .all-booking .top-tab-line{
+	padding: 0 1px;
+    margin: 0 0 0 16px;
+}
+
+
+
+
+
+/*css of booking tabs*/
+::selection {
+  background-color: #f7dc5f;
+}
+.all-booking .tabbed {
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.all-booking .tabbed > input {
+  display: none;
+}
+
+.all-booking .tabbed > label {
+  display: block;
+  float: left;
+  padding: 12px 35px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.all-booking .tabbed > label:hover,
+.all-booking .tabbed > input:checked + label {
+  background: #f7dc5f;
+}
+
+.all-booking .tab-block {
+  clear: both;
+  perspective: 600px;
+}
+
+.all-booking .tab-block > div.booking-tabs {
+  width: 100%;
+  position: absolute;
+  border: 2px solid #f7dc5f;
+  padding: 10px 30px 40px;
+  line-height: 1.4em;
+  opacity: 0;
+  transform: rotateX(-20deg);
+  transform-origin: top center;
+  transition: opacity .6s, transform 2s;
+  z-index: 0;
+}
+
+#tab-nav-1:checked ~ .tab-block > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tab-block > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tab-block > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tab-block > div:nth-of-type(4){
+  transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .tabbed { width: 400px }
+  .tabbed > label { display: none }
+  .tab-block > div.booking-tabs {
+    width: 400px;
+    border: none;
+    padding: 0;
+    opacity: 1;
+    position: relative;
+    transform: none;
+    margin-bottom: 60px;
+  }
+  .tab-block > div h2 {
+    border-bottom: 2px solid #f7dc5f;
+    padding-bottom: .5em;
+  }
+}
+
+
+div.personal-details-page .acc-detail .tabcontent .chg-pass-block{
+	overflow-y: auto;
+    flex-basis: 75%;
+    max-height: 1000px;
+    margin: 0 0 0 16px;
+}
+
+div.personal-details-page .acc-detail .tabcontent .chg-pass-block .container-password{
+	box-shadow: none;
+    background: #fff;
+    border-radius: 6px;
+    margin: 1px 4px 4px 16px;
+    display: flex;
+    width: 98%;
+    min-height: 733px;
+    box-shadow: 0 2px 8px -2px rgba(31,45,61,.4);
+}
+
+div.personal-details-page .acc-detail .tabcontent .change-password-section{
+	flex: 1.5 1;
+    margin-top: 16px;
+}
+
+div.personal-details-page .acc-detail .tabcontent h1{
+	height: 28px;
+    line-height: 1.56;
+    font-weight: 700;
+    margin: 24px 32px;
+    padding: 0;
+    font-size: 18px;
+}
+
+div.personal-details-page .acc-detail .tabcontent .password-info{
+margin-left: 32px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+div.personal-details-page .acc-detail .tabcontent .password-container{
+	padding: 40px 32px;
+
+}
+
+div.personal-details-page .acc-detail .tabcontent .form-input-block{
+margin-bottom: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.personal-details-page .acc-detail .tabcontent .input-label {
+    color: #1f2d3d;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 8px;
+
+}
+
+div.personal-details-page .acc-detail .tabcontent .forget-password-section {
+    position: relative;
+
+}
+
+div.personal-details-page .acc-detail .tabcontent .forget-password {
+    color: #41b6ac;
+    font-size: 12px;
+    font-weight: 600;
+    top: 20px;
+    right: 5%;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+div.personal-details-page .acc-detail .tabcontent .input-box {
+    padding: 0 16px;
+    height: 48px;
+    border: 1px solid #b8c1cb;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 0 8px;
+    font-size: 16px;
+    color: #2b3a51;
+
+}
+
+div.personal-details-page .acc-detail .tabcontent .change-password-image-section {
+    flex: 1 1;
+    text-align: center;
+
+}
+
+div.personal-details-page .acc-detail .tabcontent .img-class{
+	width: 50%;
+    margin-top: 50%;
+}
+
+
+

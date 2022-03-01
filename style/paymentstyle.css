@@ -1,0 +1,324 @@
+.payment-section {
+      display: flex;
+    width: 99%;
+    margin: 4px 0px;
+    height: 100%;
+}
+
+.payment-left-section {
+  display: flex;
+    flex-direction: column;
+    padding: 10px 16px;
+    width: 60%;
+}
+
+.left-section-upper {
+	display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 5px 20px 5px;
+    box-shadow: 0 0 5px #777111;
+    height: 210px;
+}
+
+.model-detail {
+    width: 25%;
+}
+
+.car-name {
+    color: black;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 13px 9px;
+}
+
+.model-img {
+	flex: 0 0 100px;
+    background-repeat: no-repeat;
+    background-position: 15%;
+    background-size: 70%;
+    height: 100px;
+    margin:10px;
+}
+
+.model-detail .model-features{
+	display: flex;
+		    justify-content: flex-start;
+		    margin-left: 20px;
+		    text-transform: capitalize;
+}
+
+    .model-detail .model-features .feature {
+        margin-right: 0px;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+    }
+
+.model-detail .model-features .feature .seater{
+	background-position: 0px 0;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-image: url("../Images/seat.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.model-detail .model-features .feature .transmission{
+	background-position: 0px 0;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-image: url("../Images/transmission.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.model-detail .model-features .feature .fuel{
+	background-position: 0px 0;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-image: url("../Images/fuel.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.left-section-upper .booking-details {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left-line {
+    border: blue 3px solid;
+    height: 0px;
+    width: 30%;
+    border-radius: 466px/14px;
+    margin-top: 6px;
+    flex: 1;
+    margin: 14px 6px 0 6px;
+}
+
+.right-line {
+    border: blue 3px solid;
+    height: 0px;
+    width: 30%;
+    border-radius: 466px/14px;
+    margin-top: 6px;
+    flex: 1;
+    margin: 14px 6px 0 6px;
+}
+
+
+.header-text {
+    flex: 1;
+    /* margin: 0 auto 0 auto; */
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.part-1 {
+    display: flex;
+    margin: 15px 5px;
+    padding: 14px;
+}
+
+.booking-pickup {
+    flex: 1;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.booking-to {
+    flex: 1;
+    text-transform: capitalize;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("../Images/iconTo.png");
+    background-size: 66px;
+    height: 25px;
+    background-position: center;
+}
+}
+
+.booking-drop {
+    flex: 1;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.time-differ {
+    display: flex;
+    justify-content: center;
+    /* background-image: url(); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+span.time-text {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+span.time {
+     background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../Images/time.png");
+    background-size: 14px;
+    /* flex: 1; */
+    width: 16px;
+    height: 16px;
+}
+
+
+.city {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.left-section-lower {
+    margin: 10px 5px 20px 5px;
+        box-shadow: 0 0 5px #777111;
+        width: 100%;
+
+}
+
+.point-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.points {
+    display: flex;
+    font-size: 12px;
+    line-height: 2;
+    /* flex: 1; */
+    justify-content: left;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.important {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+span.left {
+    flex: .5 0%;
+    width: 30%;
+    font-weight: bold;
+}
+
+span.right {
+    flex: 1;
+    width: 65%;
+    margin-right:13px;
+    text-align: justify;
+}
+
+
+
+.payment-right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* width: 60%; */
+    padding: 10px 16px;
+        box-shadow: 0 0 5px #777111;
+        height:100%;
+
+}
+
+.fare-details {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.fare-amt-details {
+    width: 100%;
+    display: flex;
+    margin: 5px 0 30px 0;
+}
+span.left-side {
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span.right-side {
+    flex: 1;
+    text-align: end;
+    font-size: 20px;
+}
+
+input.promo {
+    width: 54%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+    /* flex: 1; */
+    font-style: oblique;
+    font-weight: 600;
+    font-size: initial;
+}
+.but.fare-amt-details {
+    margin-top: 25px;
+}
+
+button.btn-apply {
+    width: 20%;
+}
+
+.divide {
+    flex: 1;
+    border: black solid 1px;
+}
+
+.loc {
+    flex: 1;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.btn-conf {
+    margin: 2px auto 0 auto;
+    height: 40px;
+    width: 125px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.promoerrror{
+    color:red;
+    font-size:12px;
+    font-style:italic;
+}

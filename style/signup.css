@@ -1,0 +1,141 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url(https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap);
+}
+
+body {
+    background-color: powderblue;
+    background-image: url(../Images/loginbg.jpg);
+    background-size: cover;
+    font-family: 'Quicksand',sans-serif;
+}
+
+div.main-signup{
+    background-color: #ffffff;
+    display: block;
+    height: 450px;
+    width: 600px;
+    margin: 7% auto auto auto;
+    border-radius: 10px;
+    box-shadow: rgb(112, 112, 112) 0 0 10px;
+}
+
+.login-panel {
+    padding: 5%;
+}
+
+.logo {
+    height: 40%;
+    padding: 10%;
+}
+
+div label {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    color: #ff6b8f;
+}
+
+.email {
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    font-weight: 600;
+    padding-left: 10%;
+    background-image: url(../Images/emaillogo.png);
+    background-repeat: no-repeat;
+    background-color: #e6e6e6;
+    border: none;
+    outline: none;
+    height: 34px;
+    width: 309px;
+}
+.password {
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    padding-left: 10%;
+    outline: none;
+    background-image: url(../Images/passwordlock.png);
+    background-repeat: no-repeat;
+    background-color: #e6e6e6;
+    border: none;
+    height: 34px;
+    width: 309px;
+}
+.mobilebtn{
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    padding-left: 10%;
+    outline: none;
+    background-image: url(../Images/mobile.png);
+    background-repeat: no-repeat;
+    background-color: #e6e6e6;
+    border: none;
+    height: 34px;
+    width: 309px;
+}
+.nameid {
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    padding-left: 10%;
+    outline: none;
+    background-image: url(../Images/idcard.png);
+    background-repeat: no-repeat;
+    background-color: #e6e6e6;
+    border: none;
+    height: 34px;
+    width: 309px;
+}
+#idtype_ {
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    padding-left: 10%;
+    outline: none;
+    border: none;
+    background-color: #e6e6e6;
+    height: 34px;
+    width: 309px;
+}
+
+.btndesign {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left:40%;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #87314e;
+    outline: none;
+    display: block;
+    height: 25px;
+    width: 80px;
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+    .btndesign:hover {
+        background-color: #df405a;
+        outline: none;
+        border: 1px #df405a solid;
+    }
+
+.label1 {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.password:focus, .email:focus,.nameid:focus,.mobilebtn:focus,#idtype_:focus{
+    box-shadow: 0 0 10px #777778;
+    border:1px solid red;
+    border-color:red;
+    outline: none;
+    background-color: rgba(251, 247, 191, 0.89)
+}
